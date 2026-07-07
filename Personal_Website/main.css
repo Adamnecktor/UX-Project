@@ -1,0 +1,50 @@
+html, body 
+{
+  width: 100%;
+
+}
+
+body
+{
+  margin:0px;
+}
+
+.header
+{
+  background-color:#ff4d4d;
+  padding: 0px;
+  text-align: center;
+  margin:0px;
+  font-size:1.2vw;
+  width:100%;
+  box-sizing: border-box;
+}
+.title h1 
+{
+  margin: 0;
+  font-size:2.55vw;
+}
+.nav 
+{
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-bottom:4px;
+  box-sizing: border-box;
+}
+.nav a 
+{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1em;
+}
+
+.row.content {height: 450px}
+
+
+	
+	
