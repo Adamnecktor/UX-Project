@@ -42,7 +42,11 @@ body
   font-family: 'Lexend', sans-serif;
   font-size: 1em;
 }
-
+.home 
+{
+ font-family: 'Lexend', sans-serif;
+ font-size: 1em;
+}
 .row.content {height: 450px}
 
 
