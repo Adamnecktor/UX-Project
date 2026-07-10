@@ -83,7 +83,7 @@ header {
     background-color: #d61a1a;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*Distributes items evenly*/
     align-items: center;
     padding: 15px 40px;
     border-bottom: 4px solid #5c1ae8; /* Purple border from screenshot */
@@ -108,7 +108,7 @@ header {
 }
 
 .row.reverse {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /*Arranges items horizontally in reverse*/
 }
 
 /* Text Card Card */
@@ -138,7 +138,7 @@ header {
     width: 300px;
     height: 300px; 
     border-radius: 8px;
-    object-fit: cover; 
+    object-fit: cover; /*forces the img to completely fill its container without stretching*/
     object-position: 25% 15%; 
     flex-shrink: 0;
 }
