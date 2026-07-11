@@ -144,22 +144,97 @@ header {
 }
 
 /* Footer Style */
-footer {
+.main-footer {
     background-color: #000000;
     color: white;
-    padding: 30px 40px;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to bottom if page content is short */
+}
+
+/* Top Section: Three Columns */
+.footer-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    padding: 30px 60px;
+    border-bottom: 1px solid #333; /* Subtly separates top and bottom portions */
 }
 
-.footer-left {
+.footer-col {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+}
+
+.footer-col h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.footer-right {
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons Setup */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Helpers for Column Alignments */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Bottom Section: White Sub-Footer */
+.footer-bottom {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.footer-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.footer-copyright {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
 }
