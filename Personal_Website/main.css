@@ -71,22 +71,12 @@ ul li a:hover {
 }
 
 /*adeez*/
-* {
+
+.aboutfont {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-/* Header Style */
-header {
-    background-color: #d61a1a;
-    color: white;
-    display: flex;
-    justify-content: space-between; /*Distributes items evenly*/
-    align-items: center;
-    padding: 15px 40px;
-    border-bottom: 4px solid #5c1ae8; /* Purple border from screenshot */
 }
 
 /* Main Content Layout */
