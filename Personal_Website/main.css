@@ -1,9 +1,9 @@
+/*-------------Homepage-----------*/
 body
 {
   margin:0px;
   background-color:#f9f9f9;
 }
-
 ul
 {
   background-color:#dd0d17;
@@ -42,7 +42,7 @@ ul li a:hover {
   color:whitesmoke;
   font-weight: bold;
   font-size: xx-large;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'TestFont', sans-serif;
   justify-content: center;
   text-align: center;
   inline-size: flex;
@@ -70,15 +70,29 @@ ul li a:hover {
     border-radius: 50%;
 }
 
-/*adeez*/
+.home_body {
+  color:black;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: 'TestFont', sans-serif;
+  justify-content: center;
+  text-align: center;
+}
 
+@font-face {
+    font-family: 'TestFont';
+    src: url('Fonts/Expose-Regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+ }
+/*-------------------------AboutHTML-------------------------------*/
 .aboutfont {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
 
+}
 /* Main Content Layout */
 .container {
     max-width: 1200px;
