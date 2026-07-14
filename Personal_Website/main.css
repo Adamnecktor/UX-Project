@@ -117,7 +117,7 @@ header {
     padding: 40px;
     border-radius: 8px;
     flex: 1;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 10px 10px 5px;
     min-height: 350px;
 }
 
@@ -141,6 +141,7 @@ header {
     object-fit: cover; /*forces the img to completely fill its container without stretching*/
     object-position: 25% 15%; 
     flex-shrink: 0;
+    box-shadow: 10px 10px 5px;
 }
 
 /* Footer Style */
@@ -217,14 +218,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-}
-
-.footer-logo {
-    font-size: 1.4rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .logo-box {
