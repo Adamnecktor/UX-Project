@@ -6,9 +6,9 @@ body
 }
 ul
 {
-  background-color:#dd0d17;
+  background-color:black;
   text-align: center;
-  font-size:x-large;
+  font-size: larger;
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -42,7 +42,7 @@ ul li a:hover {
   color:whitesmoke;
   font-weight: bold;
   font-size: xx-large;
-  font-family:'TestFont', sans-serif;
+  font-family:sans-serif;
   justify-content: center;
   text-align: center;
   inline-size: flex;
@@ -50,7 +50,7 @@ ul li a:hover {
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
-  text-shadow: black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white;
 }
 
 .home h1 {
@@ -58,9 +58,10 @@ ul li a:hover {
     padding-top: 0%;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    align-items: left;
+    justify-content: left;
+    margin-right: 300px;
     gap:10px;
     }
 
@@ -72,18 +73,19 @@ ul li a:hover {
 
 .home_body {
   color:black;
-  font-weight: bolder;
-  font-size: xx-large;
-  font-family: 'TestFont', sans-serif;
   justify-content: center;
   text-align: center;
+  font-size:500px;
+}
+.home_font_size {
+    font-size: 67px;
+    font-family: 'TestFont', sans-serif;
 }
 
 @font-face {
     font-family: 'TestFont';
-    src: url('Fonts/Expose-Regular.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
+    src: url('Fonts/Persona5MenuFontPrototype-Regular.ttf') format("Truetype");
+    font-size: larger;
  }
 /*-------------------------AboutHTML-------------------------------*/
 .aboutfont {
