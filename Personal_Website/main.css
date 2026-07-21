@@ -123,7 +123,7 @@ ul li a:hover {
     padding: 40px;
     border-radius: 8px;
     flex: 1;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 10px 10px 30px;
     min-height: 350px;
 }
 
@@ -147,7 +147,7 @@ ul li a:hover {
     object-fit: cover; /*forces the img to completely fill its container without stretching*/
     object-position: 25% 15%; 
     flex-shrink: 0;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 10px 10px 30px;
 }
 
 /* Footer Style */
