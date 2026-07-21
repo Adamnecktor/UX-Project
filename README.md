@@ -19,6 +19,8 @@ Status (Y or N):
   <br>
 <misc>
 <br>
+  main.css? N (Done by Adheesh and Faril)
+<br>
   Footer? Y (Done by Adheesh)
 <br>
   Nav bar? Y (Done by Faril)
