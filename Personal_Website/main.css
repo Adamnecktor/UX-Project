@@ -87,6 +87,23 @@ ul li a:hover {
     src: url('Fonts/Persona5MenuFontPrototype-Regular.ttf') format("Truetype");
     font-size: larger;
  }
+ /* Form */
+ .form {
+    border-radius: 5px;
+    font-size:1.2em;
+}
+
+.form h1 {
+    font-family: 'Testfont';
+    font-size: 67px;
+    text-align: center;
+}
+
+.form p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
 /*-------------------------AboutHTML-------------------------------*/
 .aboutfont {
     margin: 0;
@@ -154,8 +171,12 @@ ul li a:hover {
 .main-footer {
     background-color: #000000;
     color: white;
-    width: 100%;
-    margin-top: auto; /* Pushes footer to bottom if page content is short */
+    width: 100vw; /* Spans full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 /* Top Section: Three Columns */
