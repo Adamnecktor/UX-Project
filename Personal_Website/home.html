@@ -11,13 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 		
 		<!--fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com"> 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 		<!--Title(Change based on your page)-->
 		<title>Home</title>
@@ -29,72 +23,90 @@
 	<nav>
 	<ul>
 		<div class="logo">
-			<img src="Screenshot 2026-05-29 200026.png">
-			<span class="title">Fareezx</span>
+			<img src="comedyandtrajedymask.jpg">
+			<span class="title">Our Website</span>
 		</div>
 
 		<li><a href="#home">Home</a></li>
 
 		<li><a href="aboutHTML.html">About</a></li>
 
-		<li><a href="Faril.html">Faril</a></li>
-		
-		<li><a href="Adheesh.html">Adheesh</a></li>
-	</nav>
-
-	<div class="home">
-		<h1>Welcome to Adeez and Faril Website</h1>
-	</div>
-	<div class="home_body">
-		<h1 class="home_font_size">Want to know more about us?</h1>
-	</div>
-		<div class="container">
-			<div class="row">
-				<div class="text-card">
-					<h2>Our History</h2>
-					<p>
-						We are two students from the School of Information Technology in NYP.<br>
-						Our diploma's are Common Information Communication Technology.<br>
-						We are both from the same class and quickly became friends during the freshman orientation.<br>
-					</p>
-					<p>Find more about us -></p>
-				</div>
-				<img src="your-photo.jpg" alt="My Profile Picture" class="profile-pic">
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
+			<div class="dropdown-content">
+				<a href="Adheesh.html">Adheesh's Hobbies</a>
+				<a href="Faril.html">Faril's Hobbies</a>
 			</div>
-		</div>
-	<div class="home_body">
-		<h1 class="home_font_size">OUR HOBBIES</h1>
-	</div>
-	<div class="container">
-        <div class="row">
-            <div class="text-card">
-                <h2>About Me</h2>
-                <p>
-                    We are lorum ipsum lorum ipsum lorum ipsum 
-					lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum 
-					lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum 
-					lorum ipsum lorum ipsum.
-                </p>
-            </div>
-        </div>
+		</li>
 
-		<!--Contact Us-->
-		<div class="form">
-		<h1>Contact Us</h1>
-			<form method="Get" action="Received.html"> 
-				<p><label for="N">Name</label>
-				<input class="input" type="text" name="Name" id="N" value="" placeholder="Your Name.." required /></p>
-				
-				<p><label for="E">E-Mail:</label></td>
-				<input class="input" type="email" name="email" id="E" value="" placeholder="Your Email.."required /> </p>
-				
-				
-				<textarea class="input" rows="10" cols="100" id="T" placeholder="Write your comments.." required></textarea>
-				
-				<p><input class="button" type="submit" name="submit" id="S" value="Submit"/>
-				<input class="button" type="reset" name="clear" id="C" value="Clear"/></p>
+		<li><a href="#form">Contact</a></li>
+	</nav>
+	
+	<!--home-->
+		<div class="home_head">
+			<h1>WELCOME<br>
+				TO<br>
+				THE ADHEESH AND FARIL<br>
+				WEBSITE!!</h1>
+			<form action="aboutHTML.html">
+				<input type="submit" value="Let's Get Started" />
 			</form>
 		</div>
+<!--History-->
+	<h1 class="home_font_size">Want to know more about us?</h1>
+	<div class="container_home">
+	  <div class="row-home">
+		<div class="text-card-home">
+			<h2>Our History</h2>
+			<p>
+			We are two students from the School of Information Technology in NYP.<br>
+			Our diploma's are Common Information Communication Technology.<br>
+			We are both from the same class and quickly became friends during the freshman orientation.<br>
+			</p>
+			<form action="aboutHTML.html">
+				<input type="submit" value="Find out more!!" />
+			</form>
+		</div>
+	  </div>
+	</div>
+
+	<!--hobbies-->
+    <h1 class="home_font_size">Our Hobbies</h1>
+    <div class="container_home">
+        <div class="hobby-cards-grid">
+			<!--Adheesh hobby-->
+				<a href="Adheesh.html" class="hobby-card">
+					<div class="hobby-card-content">
+						<h2>Adheesh's Hobbies</h2>
+						<span class="hobby-btn">Explore Adheesh's Hobbies &rarr;</span>
+					</div>
+				</a>
+			<!--Faril hobby-->
+            <a href="Faril.html" class="hobby-card">
+                <div class="hobby-card-content">
+                    <h2>Faril's Hobbies</h2>
+                    <span class="hobby-btn">Explore Faril's Hobbies &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+	<!--Contact Us-->
+	<div class="form">
+	  <h1>Contact Us</h1>
+		<form method="Get" action="Received.html"> 
+		  <p><label for="N">Name</label>
+		  <input class="input" type="text" name="Name" id="N" value="" placeholder="Your Name.." required /></p>
+			
+		  <p><label for="E">E-Mail:</label></td>
+		  <input class="input" type="email" name="email" id="E" value="" placeholder="Your Email.."required /> </p>	
+
+		  <textarea class="input" rows="10" cols="100" id="T" placeholder="Write your comments.." required></textarea>
+			
+		  <p><input class="button" type="submit" name="submit" id="S" value="Submit"/>
+		  <input class="button" type="reset" name="clear" id="C" value="Clear"/></p>
+		</form>
+	</div>
 
 		 <!--footer-->
     <footer class="main-footer">
@@ -118,12 +130,6 @@
                     <span class="icon font-yt"></span>
                     <span class="icon font-ig"></span>
                 </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                Copyright © 2026 WEBSITE
             </div>
         </div>
     </footer>
