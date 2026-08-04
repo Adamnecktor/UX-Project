@@ -108,7 +108,6 @@ ul li.dropdown {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .home_head h1 {
     font-family: 'Poppins';
     text-align: center;
@@ -118,9 +117,14 @@ ul li.dropdown {
     padding-top: 12%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white;
 }
+.home_img {
+    height: 650px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* Text Card Card */
-.text-card-home {
+.hist-card-home {
     background-color: white;
     padding: 40px;
     border-radius: 8px;
@@ -131,17 +135,36 @@ ul li.dropdown {
     text-align: center;
 }
 
-.text-card-home h2 {
-    font-size: 1.3rem;
+.hist-card-home h2 {
+    font-size: 2rem;
     font-weight: bolder;
     margin-bottom: 20px;
     color: #000000;
 }
 
-.text-card-home p {
+.hist-card-home p {
     font-weight: bold;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+}
+.history_btn {
+  background-color:#fa6c6c;
+  border-radius: 10%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+}
+.history_btn:hover {
+    transform:translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    background-color: #fb8b8b;
 }
 /* Card Grid Layout */
 .hobby-cards-grid {
@@ -198,23 +221,75 @@ ul li.dropdown {
     background-color: #fe7777;
     color: #ffffff;
 }
-/* Form */
-.form {
-    border-radius: 5px;
+/* Container to limit the slider dimensions */
+.slider-container {
+  width: 100%;
+  max-width: 600px; /* Adjust size as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* The scrollable row containing images */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Enables horizontal snapping */
+  scroll-behavior: smooth;
+}
+
+/* Individual slides */
+.slider img {
+  flex: 0 0 100%; /* Ensures each image takes full width */
+  width: 100%;
+  height: auto;
+  scroll-snap-align: center; /* Snaps the image to the middle */
+  object-fit: cover;
+}
+/* Contact us */
+.contact {
     font-size:1.2em;
     text-align: center;
 }
 
-.form h1 {
+.contact h1 {
     font-family: 'Poppins';
     font-weight: bolder;
     font-size: 67px;
     text-align: center;
 }
 
-.form p {
+.contact p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+}
+.contact input[type=text] {
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+}
+.contact input[type=text]:hover {
+    transition: 0.5s;
+    border:2px solid  #fe7777;
+}
+.contact input[type=email] {
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+
+}
+.contact input[type=email]:hover {
+    transition: 0.5s;
+    border: 2px solid  #fe7777;
+}
+.contact textarea {
+    outline: none;
+    padding:10px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+}
+.contact textarea:hover {
+    transition: 0.5s;
+    border: 3px solid  #fe7777 ;
 }
 /*font-home*/
 @font-face {
@@ -382,4 +457,21 @@ ul li.dropdown {
     font-weight: bold;
     text-align: center;
     line-height: 1.4;
+}
+/*----------faril_hobbies------------*/
+.faril_head {
+  background-image: url(gaming_stock.jpg);
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.faril_head h1 {
+    font-family: 'Poppins';
+    text-align: center;
+    padding-top: 80px;
+    font-weight: bolder;
+    font-size: 5em;
+    color:whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white;
 }
