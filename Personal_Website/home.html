@@ -1,149 +1,413 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!--(Reactive)-->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-			
-		<!--css-->
-		<link rel="stylesheet" type="text/css" href="main.css">
-		
-		<!--fonts-->
-		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-		<!--Title(Change based on your page)-->
-		<title>Home</title>
-		
-	</head>
-	
-	<!--Nav bar(DONT CHANGE)-->
-<body>
-	<nav>
-	<ul>
-		<div class="logo">
-			<img src="comedyandtrajedymask.jpg">
-			<span class="title">Faril & Adheesh</span>
-		</div>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-		<li><a href="home.html">Home</a></li>
+    <title>Home</title>
+    <style>
+    /* Global Image Fluidity */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-		<li><a href="aboutHTML.html">About</a></li>
+    /*--homepage--*/
+    .home_head {
+        background-image: url("Images/red_curtains.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
 
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
-			<div class="dropdown-content">
-				<a href="Adheesh.html">Adheesh's Hobbies</a>
-				<a href="Faril.html">Faril's Hobbies</a>
-			</div>
-		</li>
+    .home_head h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: 800;
+        font-size: clamp(2rem, 5vw, 4.5rem);
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        margin-bottom: 20px;
+    }
 
-		<li><a href="#form">Contact</a></li>
-	</nav>
-	
-	<!--home-->
-		<div class="home_head">
-			<h1>WELCOME<br>
-				TO<br>
-				THE ADHEESH AND FARIL<br>
-				WEBSITE!!</h1>
-		</div>
+    .home_head p {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
 
-<!--History-->
-	<h1 class="home_font_size">Want to know more about us?</h1>
-	<img class="home_img" src="background.jpg">
-	<div class="container_home">
-	  <div class="row-home">
-		<div class="hist-card-home">
-			<h2>Our History</h2>
-			<p>
-			We are two students from the School of Information Technology in NYP.<br>
-			Our diploma's are Common Information Communication Technology.<br>
-			We are both from the same class and quickly became friends during the freshman orientation.<br>
-			</p>
-			<form action="aboutHTML.html">
-				<input class="history_btn"  type="submit" value="Find out more!!" />
-			</form>
-		</div>
-	  </div>
-	</div>
+    .home_font_size {
+        color: black;
+        text-align: center;
+        font-size: clamp(2rem, 4vw, 3.8rem);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        margin: 40px 0 20px 0;
+        padding: 0 15px;
+    }
 
-	<!--hobbies-->
-    <h1 class="home_font_size">Our Hobbies</h1>
-	<div class="slider-container">
-  	  <div class="slider">
-		<img src="chess.jpg" alt="Slide 1">
-		<img src="soccer.jpg" alt="Slide 2">
-		<img src="gaming_stock.jpg" alt="Slide 3">
-		<img src="reading_stock.jpg" alt="Slide 4">
-  	  </div>
-	</div>
+    /* History Section */
+    .row_hist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto 50px auto;
+        padding: 0 20px;
+    }
 
-    <div class="container_home">
-        <div class="hobby-cards-grid">
+    .hist_img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
 
-			<!--Adheesh hobby-->
-				<a href="Adheesh.html" class="hobby-card">
-					<div class="hobby-card-content">
-						<h2>Adheesh's Hobbies</h2>
-						<span class="hobby-btn">Explore Adheesh's Hobbies &rarr;</span>
-					</div>
-				</a>
+    .hist-card-home {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
 
-			<!--Faril hobby-->
-            <a href="Faril.html" class="hobby-card">
-                <div class="hobby-card-content">
-                    <h2>Faril's Hobbies</h2>
-                    <span class="hobby-btn">Explore Faril's Hobbies &rarr;</span>
-                </div>
-            </a>
-        </div>
+    .hist-card-home h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #000000;
+    }
+
+    .hist-card-home p {
+        font-weight: bold;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+
+    .history_btn {
+        background-color: #fa6c6c;
+        border-radius: 8px;
+        color: white;
+        padding: 12px 28px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 800;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .history_btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        background-color: #fb8b8b;
+    }
+
+    /* Hobbies */
+    .hobby-cards-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        padding: 0 20px;
+    }
+
+    .hobby-card {
+        border-radius: 12px;
+        padding: 30px;
+        width: 100%;
+        max-width: 340px;
+        min-height: 250px;
+        text-decoration: none;
+        color: #000000;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hobby-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        border-color: #fe7777;
+    }
+
+    .hobby-card-content h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 12px;
+        color: #111111;
+    }
+
+    .hobby-btn {
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #000000;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 0.95rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hobby-card:hover .hobby-btn {
+        background-color: #fe7777;
+        color: #ffffff;
+    }
+
+    /* Slider Container */
+    .slider-container {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .slider img {
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+        scroll-snap-align: center;
+        object-fit: cover;
+    }
+
+    /* Contact Us */
+    .contact {
+        font-size: 1.1em;
+        text-align: center;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        text-align: center;
+    }
+
+    .contact p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+
+    .contact input[type=text],
+    .contact input[type=email],
+    .contact textarea {
+        width: 100%;
+        max-width: 600px;
+        padding: 12px;
+        outline: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+
+    .contact input[type=text]:hover,
+    .contact input[type=email]:hover {
+        transition: 0.2s;
+        border: 2px solid #fe7777;
+    }
+
+    .contact textarea:hover {
+        transition: 0.2s;
+        border: 2px solid #fe7777;
+    }
+
+    .contact .button {
+        padding: 10px 24px;
+        margin: 5px;
+        border: none;
+        border-radius: 6px;
+        background-color: #fa6c6c;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+	.contact .button:hover {
+		transition: 0.2s;
+		background-color: #fb8b8b;
+	}
+
+
+    /* AI */
+    @media (max-width: 768px) {
+        .row_hist {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-top {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        .footer-col.text-right, 
+        .footer-col.text-center {
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <nav>
+   <ul>
+    <div class="logo">
+      <img src="Images/comedyandtrajedymask.jpg" alt="Logo">
+      <span class="title">Faril & Adheesh</span>
     </div>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="aboutHTML.html">About</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
+      <div class="dropdown-content">
+        <a href="Adheesh.html">Adheesh's Hobbies</a>
+        <a href="Faril.html">Faril's Hobbies</a>
+      </div>
+    </li>
+    <li><a href="#form">Contact</a></li>
+   </ul>
+  </nav>
 
-	<!--Contact Us-->
-	<div class="contact">
-	  <h1 id="form">Contact Us</h1>
-		<form method="Get" action="Received.html"> 
-		  <p><label for="N">Name:</label>
-		  <input class="input" type="text" name="Name" id="N" value="" placeholder="Your Name.." required /></p>
-			
-		  <p><label for="E">E-Mail:</label></td>
-		  <input class="input" type="email" name="email" id="E" value="" placeholder="Your Email.."required /> </p>	
+  <div class="home_head">
+        <h1>WELCOME TO <br> THE ADHEESH AND FARIL <br> WEBSITE!!</h1>
+        <p>Where we talk about <br> our experience together in Poly</p>
+  </div>
 
-		  <textarea class="input" rows="10" cols="100" id="T" placeholder="Write your comments.." required></textarea>
-			
-		  <p><input class="button" type="submit" name="submit" id="S" value="Submit"/>
-		  <input class="button" type="reset" name="clear" id="C" value="Clear"/></p>
-		</form>
-	</div>
+  <h1 class="home_font_size">Want to know more about us?</h1>
+  <div class="row_hist">
+    <img class="hist_img" src="Images/adheeshpic.jpeg" alt="Adheesh Profile Picture">
+    <div class="hist-card-home">
+      <h2>Our History</h2>
+      <p> 
+        We are two students from the School of Information Technology in NYP.<br>
+        Our diploma's are Common Information Communication Technology.<br>
+        We are both from the same class and quickly became friends during the freshman orientation.<br>
+      </p>
+      <form action="aboutHTML.html">
+        <input class="history_btn" type="submit" value="Find out more!!" />
+      </form>
+    </div>
+  </div>
 
-		 <!--footer-->
-    <footer class="main-footer">
-        <div class="footer-top">
-            <div class="footer-col">
-                <a href="aboutHTML.html">About us</a>
-                <a href="#">Contact us</a>
-            </div>
-            
-            <div class="footer-col text-center">
-                <h3>Learn more about us:</h3>
-                <a href="Adheesh.html">Adheesh’s Hobby</a>
-                <a href="Faril.html">Faril’s Hobby</a>
-            </div>
-            
-            <div class="footer-col text-right">
-                <h3>Find us at:</h3>
-                <div class="social-icons">
-                    <span class="icon"></span>
-                    <span class="icon font-fb"></span>
-                    <span class="icon font-yt"></span>
-                    <span class="icon font-ig"></span>
-                </div>
-            </div>
+  <div class="hobbies">
+    <h1 class="home_font_size">Our Hobbies</h1>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="Images/chess.jpg" alt="Chess Hobby Slide">
+      </div>
+    </div>
+    <div class="container_home">
+      <div class="hobby-cards-grid">
+
+        <a href="Adheesh.html" class="hobby-card">
+          <div class="hobby-card-content">
+            <h2>Adheesh's Hobbies</h2>
+          </div>
+          <span class="hobby-btn">Explore Adheesh's Hobbies &rarr;</span>
+        </a>
+
+        <a href="Faril.html" class="hobby-card">
+          <div class="hobby-card-content">
+            <h2>Faril's Hobbies</h2>
+          </div>
+          <span class="hobby-btn">Explore Faril's Hobbies &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h1 id="form">Contact Us</h1>
+    <form method="Get" action="Received.html"> 
+
+      <p>
+        <label for="N">Name:</label><br>
+        <input class="input" type="text" name="Name" id="N" placeholder="Your Name.." required />
+      </p>
+
+      <p>
+        <label for="E">E-Mail:</label><br>
+        <input class="input" type="email" name="email" id="E" placeholder="Your Email.." required /> 
+      </p> 
+
+      <p>
+        <label for="T">Comments:</label><br>
+        <textarea class="input" rows="6" id="T" placeholder="Write your comments.." required></textarea>
+      </p>
+
+      <p>
+        <input class="button" type="submit" name="submit" id="S" value="Submit"/>
+        <input class="button" type="reset" name="clear" id="C" value="Clear"/>
+      </p>
+
+    </form>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <a href="aboutHTML.html">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="footer-col text-center">
+        <h3>Learn more about us:</h3>
+        <a href="Adheesh.html">Adheesh’s Hobby</a>
+        <a href="Faril.html">Faril’s Hobby</a>
+      </div>
+
+      <div class="footer-col text-right">
+        <h3>Find us at:</h3>
+        <div class="social-icons">
+          <span class="icon"></span>
+          <span class="icon font-fb"></span>
+          <span class="icon font-yt"></span>
+          <span class="icon font-ig"></span>
         </div>
-    </footer>
-	
-	
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
