@@ -8,7 +8,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 			
 		<!--css-->
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		
 		<!--fonts-->
 		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -18,7 +18,7 @@
 		<style>
 			/*----------faril_hobbies------------*/
 			.faril_head {
-				background-image: url(gaming_stock.jpg);
+				background-image: url(Images/gaming_stock.jpg);
 				background-size: cover;
 				height: 300px;
 				background-position: center;
@@ -35,61 +35,99 @@
 		
 	</head>
 	
+<body class="d-flex flex-column min-vh-100">
 	<!--Nav bar(DONT CHANGE)-->
-<body>
-	<nav>
-	<ul>
-		<div class="logo">
-			<img src="comedyandtrajedymask.jpg">
-			<span class="title">Faril & Adheesh</span>
-		</div>
+ <nav>
+   <ul>
+    <div class="logo">
+      <img src="Images/comedyandtrajedymask.jpg" alt="Logo">
+      <span class="title">Faril & Adheesh</span>
+    </div>
+      <li><a href="home.html">Home</a></li>
 
-		<li><a href="home.html">Home</a></li>
+      <li><a href="aboutHTML.html">About</a></li>
 
-		<li><a href="aboutHTML.html">About</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
+        <div class="dropdown-content">
+          <a href="Adheesh.html">Adheesh's Hobbies</a>
+          <a href="Faril.html">Faril's Hobbies</a>
+        </div>
+      </li>
 
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
-			<div class="dropdown-content">
-				<a href="Adheesh.html">Adheesh's Hobbies</a>
-				<a href="Faril.html">Faril's Hobbies</a>
-			</div>
-		</li>
-
-		<li><a href="#form">Contact</a></li>
-	</nav>
-
+      <li><a href="#form">Contact</a></li>
+   </ul>
+  </nav>
 	<!--Image-->
 	<div class="faril_head">
 		<h1>Faril Hobbies</h1>
+		<p>Video Games</p>
 		</div>
 
+		<!--faril-->
+    <div class="container">
+        <div class="row">
+            <div class="text-card">
+                <h2>About Faril</h2>
+                <p>
+					My Hobby is playing video games!
+                </p>
+            </div>
+            <img src="Images/background.jpg" alt="My Profile Picture" class="profile-pic">
+
+	<!--contact-->
+	<div class="contact">
+    <h1 id="form">Contact Us</h1>
+    <form method="Get" action="Received.html"> 
+
+      <p>
+        <label for="N">Name:</label><br>
+        <input class="input" type="text" name="Name" id="N" placeholder="Your Name.." required />
+      </p>
+
+      <p>
+        <label for="E">E-Mail:</label><br>
+        <input class="input" type="email" name="email" id="E" placeholder="Your Email.." required /> 
+      </p> 
+
+      <p>
+        <label for="T">Comments:</label><br>
+        <textarea class="input" rows="6" id="T" placeholder="Write your comments.." required></textarea>
+      </p>
+
+      <p>
+        <input class="button" type="submit" name="submit" id="S" value="Submit"/>
+        <input class="button" type="reset" name="clear" id="C" value="Clear"/>
+      </p>
+
+    </form>
+  </div>
 	
-		 <!--footer-->
-    <footer class="main-footer">
-        <div class="footer-top">
-            <div class="footer-col">
-                <a href="aboutHTML.html">About us</a>
-                <a href="#">Contact us</a>
-            </div>
-            
-            <div class="footer-col text-center">
-                <h3>Learn more about us:</h3>
-                <a href="Adheesh.html">Adheesh’s Hobby</a>
-                <a href="Faril.html">Faril’s Hobby</a>
-            </div>
-            
-            <div class="footer-col text-right">
-                <h3>Find us at:</h3>
-                <div class="social-icons">
-                    <span class="icon"></span>
-                    <span class="icon font-fb"></span>
-                    <span class="icon font-yt"></span>
-                    <span class="icon font-ig"></span>
-                </div>
-            </div>
+	<!--footer-->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <a href="aboutHTML.html">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="footer-col text-center">
+        <h3>Learn more about us:</h3>
+        <a href="Adheesh.html">Adheesh’s Hobby</a>
+        <a href="Faril.html">Faril’s Hobby</a>
+      </div>
+
+      <div class="footer-col text-right">
+        <h3>Find us at:</h3>
+        <div class="social-icons">
+          <span class="icon"></span>
+          <span class="icon font-fb"></span>
+          <span class="icon font-yt"></span>
+          <span class="icon font-ig"></span>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 	
 	
 </body>

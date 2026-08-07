@@ -1,108 +1,183 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!--(Reactive)-->
-		<meta charset="utf-8">	
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-			
-		<!--css-->
-		<link rel="stylesheet" type="text/css" href="main.css">
-		
-		<!--fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com"> 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<head>
+       <!--reactive--> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!--external files-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="Javascript/External.js"></script>
 
-		<!--Title(Change based on your page)-->
-		<title>About Us</title>
-		
-	</head>
-	
-	<!--Nav bar(DONT CHANGE)-->
-<body>
-	<nav>
-	<ul>
-		<div class="logo">
-			<img src="comedyandtrajedymask.jpg">
-			<span class="title">Faril & Adheesh</span>
-		</div>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>  
 
-		<li><a href="home.html">Home</a></li>
+    <!--Title(Change based on your page)-->
+    <title>About Us</title>
 
-		<li><a href="aboutHTML.html">About</a></li>
+    <style>
+        /* Main Content Layout */
+        .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 20px;
+        flex: 1;
+        }
 
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
-			<div class="dropdown-content">
-				<a href="Adheesh.html">Adheesh's Hobbies</a>
-				<a href="Faril.html">Faril's Hobbies</a>
-			</div>
-		</li>
+        /* Alternating Rows using Flexbox */
+        .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        gap: 40px;
+        }
 
-		<li><a href="#form">Contact</a></li>
-	</nav>
+        .row.reverse {
+        flex-direction: row-reverse; /*Arranges items horizontally in reverse*/
+        }
+
+        /* Text Card Card */
+        .text-card {
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+        flex: 1;
+        box-shadow: 10px 10px 30px;
+        min-height: 350px;
+        }
+
+        .text-card h2 {
+        font-size: 1.3rem;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        color: #000000;
+        }
+
+        .text-card p {
+        font-weight: bold;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        }
+
+        .profile-pic {
+        width: 300px;
+        height: 300px; 
+        border-radius: 8px;
+        object-fit: cover; /*forces the img to completely fill its container without stretching*/
+        object-position: 25% 15%; 
+        flex-shrink: 0;
+        box-shadow: 10px 10px 30px;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!--navbar-->
+  <nav>
+   <ul>
+    <div class="logo">
+      <img src="Images/comedyandtrajedymask.jpg" alt="Logo">
+      <span class="title">Faril & Adheesh</span>
+    </div>
+      <li><a href="home.html">Home</a></li>
+
+      <li><a href="aboutHTML.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Hobbies ▾</a>
+        <div class="dropdown-content">
+          <a href="Adheesh.html">Adheesh's Hobbies</a>
+          <a href="Faril.html">Faril's Hobbies</a>
+        </div>
+      </li>
+
+      <li><a href="#form">Contact</a></li>
+   </ul>
+  </nav>
 
 	<!--faril-->
-    <div class="container">
-        <div class="row">
-            <div class="text-card">
-                <h2>About Faril</h2>
-                <p>
-                    Hey There! I'm Faril.<br>
-                    I’m currently a Year 1 student at Nanyang Polytechnic, taking the Common ICT Programme.<br>
-                    I was originally a PFP Student back in 2025! So it's not my first rodeo!<br>
-                    My hobbies are watching anime and reading books.<br>
-                    I hope one day that i am able to make my own story!!
-                </p>
-            </div>
-            <img src="your-photo.jpg" alt="My Profile Picture" class="profile-pic">
-        </div>
-		<!--adeez-->
-        <div class="row reverse">
-            <div class="text-card">
-                <h2>About Adheesh</h2>
-                <p>
-                    Hi there! I'm Adheesh. I’m currently a Year 1 student at Nanyang Polytechnic, taking the Common ICT Programme. When I'm not busy with classes, you can usually find me on the football field or playing chess. I've always loved games, and a big goal of mine is to eventually develop one of my own!
-                </p>
-            </div>
-            <img src="adheeshpic.jpeg" alt="My Profile Picture" class="profile-pic">
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="text-card">
+        <h2>About Faril</h2>
+        <p>
+          Hey There! I'm Faril.<br>
+          I’m currently a Year 1 student at Nanyang Polytechnic, taking the Common ICT Programme.<br>
+          I was originally a PFP Student back in 2025! So it's not my first rodeo!<br>
+          One of my hobbies is that i like cooking,<br>
+          if you want to find out more check out my hobbies section!!
+        </p>
+      </div>
+      <img src="Images/background.jpg" alt="My Profile Picture" class="profile-pic">
     </div>
-
-    <!--footer-->
-    <footer class="main-footer">
-        <div class="footer-top">
-            <div class="footer-col">
-                <a href="aboutHTML.html">About us</a>
-                <a href="#">Contact us</a>
-            </div>
-            
-            <div class="footer-col text-center">
-                <h3>Learn more about us:</h3>
-                <a href="Adheesh.html">Adheesh’s Hobby</a>
-                <a href="Faril.html">Faril’s Hobby</a>
-            </div>
-            
-            <div class="footer-col text-right">
-                <h3>Find us at:</h3>
-                <div class="social-icons">
-                    <span class="icon"></span>
-                    <span class="icon font-fb"></span>
-                    <span class="icon font-yt"></span>
-                    <span class="icon font-ig"></span>
-                </div>
-            </div>
+		<!--adeez-->
+      <div class="row reverse">
+        <div class="text-card">
+            <h2>About Adheesh</h2>
+            <p>
+                Hi there! I'm Adheesh. I’m currently a Year 1 student at Nanyang Polytechnic, taking the Common ICT Programme. 
+                When I'm not busy with classes, you can usually find me on the football field or playing chess. 
+                I've always loved games, and a big goal of mine is to eventually develop one of my own!
+            </p>
         </div>
+        <img src="Images/adheeshpic.jpeg" alt="My Profile Picture" class="profile-pic">
+      </div>
+  </div>
 
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                Copyright © 2026 WEBSITE
-            </div>
+    <!--contact-->
+    <div class="contact">
+      <h1 id="form">Contact Us</h1>
+      <form method="Get" action="Received.html"> 
+
+      <p>
+        <label for="N">Name:</label><br>
+        <input class="input" type="text" name="Name" id="N" placeholder="Your Name.." required />
+      </p>
+
+      <p>
+        <label for="E">E-Mail:</label><br>
+        <input class="input" type="email" name="email" id="E" placeholder="Your Email.." required /> 
+      </p> 
+
+      <p>
+        <label for="T">Comments:</label><br>
+        <textarea class="input" rows="6" id="T" placeholder="Write your comments.." required></textarea>
+      </p>
+
+      <p>
+        <input class="button" type="submit" name="submit" id="S" value="Submit"/>
+        <input class="button" type="reset" name="clear" id="C" value="Clear"/>
+      </p>
+
+    </form>
+  </div>
+<!--footer-->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <a href="aboutHTML.html">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="footer-col text-center">
+        <h3>Learn more about us:</h3>
+        <a href="Adheesh.html">Adheesh’s Hobby</a>
+        <a href="Faril.html">Faril’s Hobby</a>
+      </div>
+
+      <div class="footer-col text-right">
+        <h3>Find us at:</h3>
+        <div class="social-icons">
+          <span class="icon"></span>
+          <span class="icon font-fb"></span>
+          <span class="icon font-yt"></span>
+          <span class="icon font-ig"></span>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
