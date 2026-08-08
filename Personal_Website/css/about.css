@@ -1,0 +1,54 @@
+ /* Main Content Layout */
+        .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 20px;
+        flex: 1;
+        }
+
+        /* Alternating Rows using Flexbox */
+        .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        gap: 40px;
+        }
+
+        .row.reverse {
+        flex-direction: row-reverse; /*Arranges items horizontally in reverse*/
+        }
+
+        /* Text Card Card */
+        .text-card {
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+        flex: 1;
+        box-shadow: 10px 10px 30px;
+        min-height: 350px;
+        }
+
+        .text-card h2 {
+        font-size: 1.3rem;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        color: #000000;
+        }
+
+        .text-card p {
+        font-weight: bold;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        }
+
+        .profile-pic {
+        width: 300px;
+        height: 300px; 
+        border-radius: 8px;
+        object-fit: cover; /*forces the img to completely fill its container without stretching*/
+        object-position: 25% 15%; 
+        flex-shrink: 0;
+        box-shadow: 10px 10px 30px;
+        }

@@ -9,33 +9,21 @@
 			
 		<!--css-->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/faril.css">
+
+    <!--Javascript-->
+    <script src="Javascript/External.js"></script>
+
 		
 		<!--fonts-->
 		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 		<!--Title(Change based on your page)-->
 		<title>Home</title>
-		<style>
-			/*----------faril_hobbies------------*/
-			.faril_head {
-				background-image: url(Images/gaming_stock.jpg);
-				background-size: cover;
-				height: 300px;
-				background-position: center;
-				background-repeat: no-repeat; }
-			.faril_head h1 {
-				font-family: 'Poppins';
-				text-align: center;
-				padding-top: 80px;
-				font-weight: bolder;
-				font-size: 5em;
-				color:whitesmoke;
-				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white; }
-		</style>
-		
 	</head>
 	
 <body class="d-flex flex-column min-vh-100">
+
 	<!--Nav bar(DONT CHANGE)-->
  <nav>
    <ul>
@@ -58,42 +46,107 @@
       <li><a href="#form">Contact</a></li>
    </ul>
   </nav>
-	<!--Image-->
-	<div class="faril_head">
-		<h1>Faril Hobbies</h1>
-		<p>Video Games</p>
-		</div>
 
-		<!--faril-->
-    <div class="container">
-        <div class="row">
-            <div class="text-card">
-                <h2>About Faril</h2>
-                <p>
-					My Hobby is playing video games!
-                </p>
-            </div>
-            <img src="Images/background.jpg" alt="My Profile Picture" class="profile-pic">
+  <!--head-->
+  <div class="faril_head">
+    <h1>My Cooking Journey</h1>
+  </div>
+
+    <!--Why-->
+  <div class="why_section">
+    <h1>Why I Started</h1>
+    <div class="row_why">
+      <img class="why_img" src="Images/uncle_roger.jpg" alt="Adheesh Profile Picture">
+      <div class="why_card">
+        <h2>My Experience With Cooking!!</h2>
+        <p> 
+          &nbsp; Cooking allows me to be creative and try different recipes and experience cuisines around the world.<br><br> 
+          &nbsp; I learned how to cook in 2020 during the circuit breaker as i wanted to do something to pass along the time,
+          and ever since than it's a hobby that i keep doing because i enjoy doing it.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+<!--dishes--------->
+
+  <!--Fried Rice-->
+  <h1 class="dishh1">Dishes</h1>
+  <div class="dish_section">
+    <div class="dish_content">
+      <img class="why_img" src="Images/cooking_one.jpg" alt="cook">
+      <h2>Fried Rice<br></h2>
+      <p>
+        One of my favourite dishes to make as it easy and 
+        full of flavour!!<br>
+        This was first dish i learned how to cook because of Uncle
+        Roger.<br>
+        (don't forget the MSG!!!!!)
+      </p>
+      <a href="https://imhungryforthat.com/uncle-roger-fried-rice-recipe/">
+        Click this for Recipe!
+      </a>
+    </div>
+
+  <!--Pasta-->
+    <div class="dish_content">
+      <img class="why_img" src="Images/cooking_one.jpg" alt="cook">
+      <h2>Pasta<br></h2>
+      <p>
+        Pasta has so many different combinations like bolognese or cabonara or alferdo
+        and so many more!!<br>
+        Pasta is an easy dish to make and also healthy!!<br>
+        (My favourite is bolognese!!)
+      </p>
+      <a href="https://imhungryforthat.com/uncle-roger-fried-rice-recipe/">
+        Click this for Recipe!
+      </a>
+    </div>
+  
+  <!--burger-->
+    <div class="dish_content">
+      <img class="why_img" src="Images/cooking_one.jpg" alt="cook">
+      <h2>Burger<br></h2>
+      <p>
+       Burgers are also an easy dish to make and sooo tasty!!<br>
+       This is my go to for BBQs or eat outs as it's easy to carry and bring around!!<br>
+       (Mcspicy all day everyday!!)
+      </p>
+      <a href="https://imhungryforthat.com/uncle-roger-fried-rice-recipe/">
+        Click this for Recipe!
+      </a>
+    </div>
+  </div>
+
+  <div class="cook_video">
+     <h1>Videos</h1>
+     <p>video</p>
+     <p>video</p>
+     <p>video</p>
+  </div>
 
 	<!--contact-->
 	<div class="contact">
-    <h1 id="form">Contact Us</h1>
-    <form method="Get" action="Received.html"> 
+    <h1>Contact Us</h1>
+    <form id="form" method="post"  onsubmit=" return form_validation()" > 
 
       <p>
         <label for="N">Name:</label><br>
         <input class="input" type="text" name="Name" id="N" placeholder="Your Name.." required />
       </p>
+      <p class="err_N" id="err_N"></p>
 
       <p>
         <label for="E">E-Mail:</label><br>
         <input class="input" type="email" name="email" id="E" placeholder="Your Email.." required /> 
-      </p> 
+      </p>
+      <p class="err_E" id="err_E"></p>
 
       <p>
         <label for="T">Comments:</label><br>
         <textarea class="input" rows="6" id="T" placeholder="Write your comments.." required></textarea>
       </p>
+      <p class="err_T" id="err_T"></p>
 
       <p>
         <input class="button" type="submit" name="submit" id="S" value="Submit"/>

@@ -7,72 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
-    <!--external files-->
+    <!--css-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+    <!--Javascript-->
     <script src="Javascript/External.js"></script>
 
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>  
 
+
     <!--Title(Change based on your page)-->
     <title>About Us</title>
 
-    <style>
-        /* Main Content Layout */
-        .container {
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 40px 20px;
-        flex: 1;
-        }
-
-        /* Alternating Rows using Flexbox */
-        .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 60px;
-        gap: 40px;
-        }
-
-        .row.reverse {
-        flex-direction: row-reverse; /*Arranges items horizontally in reverse*/
-        }
-
-        /* Text Card Card */
-        .text-card {
-        background-color: white;
-        padding: 40px;
-        border-radius: 8px;
-        flex: 1;
-        box-shadow: 10px 10px 30px;
-        min-height: 350px;
-        }
-
-        .text-card h2 {
-        font-size: 1.3rem;
-        font-weight: bolder;
-        margin-bottom: 20px;
-        color: #000000;
-        }
-
-        .text-card p {
-        font-weight: bold;
-        line-height: 1.6;
-        font-size: 1.1rem;
-        }
-
-        .profile-pic {
-        width: 300px;
-        height: 300px; 
-        border-radius: 8px;
-        object-fit: cover; /*forces the img to completely fill its container without stretching*/
-        object-position: 25% 15%; 
-        flex-shrink: 0;
-        box-shadow: 10px 10px 30px;
-        }
-    </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <!--navbar-->
@@ -127,30 +75,36 @@
       </div>
   </div>
 
-    <!--contact-->
-    <div class="contact">
-      <h1 id="form">Contact Us</h1>
-      <form method="Get" action="Received.html"> 
+   <!--contact-->
+	<div class="contact">
+    <h1>Contact Us</h1>
+    <form id="form" method="post"  onsubmit=" return form_validation()" > 
 
       <p>
         <label for="N">Name:</label><br>
         <input class="input" type="text" name="Name" id="N" placeholder="Your Name.." required />
       </p>
+      <p class="err_N" id="err_N"></p>
 
       <p>
         <label for="E">E-Mail:</label><br>
         <input class="input" type="email" name="email" id="E" placeholder="Your Email.." required /> 
-      </p> 
+      </p>
+      <p class="err_E" id="err_E"></p>
 
       <p>
         <label for="T">Comments:</label><br>
         <textarea class="input" rows="6" id="T" placeholder="Write your comments.." required></textarea>
       </p>
+      <p class="err_T" id="err_T"></p>
 
       <p>
         <input class="button" type="submit" name="submit" id="S" value="Submit"/>
         <input class="button" type="reset" name="clear" id="C" value="Clear"/>
       </p>
+
+    </form>
+  </div>
 
     </form>
   </div>
@@ -166,6 +120,16 @@
         <h3>Learn more about us:</h3>
         <a href="Adheesh.html">Adheesh’s Hobby</a>
         <a href="Faril.html">Faril’s Hobby</a>
+      </div>
+
+      <div class="footer-col text-right">
+        <h3>Find us at:</h3>
+        <div class="social-icons">
+          <span class="icon"></span>
+          <span class="icon font-fb"></span>
+          <span class="icon font-yt"></span>
+          <span class="icon font-ig"></span>
+        </div>
       </div>
     </div>
   </footer>

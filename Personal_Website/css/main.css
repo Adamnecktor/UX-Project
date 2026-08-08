@@ -143,6 +143,9 @@ ul li.dropdown {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
     }
+    .err_N, .err_E, .err_T {
+        color: red;
+    }
 
     .contact input[type=text],
     .contact input[type=email],
@@ -227,51 +230,6 @@ ul li.dropdown {
 .footer-col a:hover {
     text-decoration: underline;
 }
-
-/* Social Icons Setup */
-.social-icons {
-    display: flex;
-    gap: 12px;
-    justify-content: flex-end;
-    margin-top: 5px;
-}
-
-.icon {
-    width: 32px;
-    height: 32px;
-    background-color: white;
-    color: white;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
 /* Helpers for Column Alignments */
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-
-/* Bottom Section: White Sub-Footer */
-.footer-bottom {
-    background-color: white;
-    color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-}
-
-.logo-box {
-    background-color: black;
-    padding: 5px 10px;
-    border-radius: 8px;
-}
-
-.footer-copyright {
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.4;
-}
+.text-center { text-align: center;
+            color: white; }

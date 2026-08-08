@@ -1,4 +1,5 @@
 /* AdheeshHOBBIES */
+/* Universal Indicator */
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +15,7 @@ body {
     min-height: 100vh;
 }
 
-/* ==========================================
-   2. AUTOMATIC CAROUSEL BANNER
-   ========================================== */
+/* Sliding Banner(AI USED) */
 .banner-container {
     position: relative;
     width: 100%;
@@ -77,14 +76,10 @@ body {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.35);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3),
-                0 16px 32px rgba(0, 0, 0, 0.2),
-                0 24px 48px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* ==========================================
-   3. MY STATS SECTION
-   ========================================== */
+/* My Stats Section */
 .stats-section {
     width: 100%;
     max-width: 950px;
@@ -105,10 +100,10 @@ body {
 
 /* Outer White Card Box */
 .stats-card-wrapper {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .stats-card {
@@ -116,7 +111,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    background-color: #ffffff !important;
+    background-color: #ffffff ;
 }
 
 .stats-info {
@@ -125,14 +120,14 @@ body {
     flex-direction: column;
     gap: 16px;
     font-size: 1.15rem;
-    background-color: #ffffff !important;
+    background-color: #ffffff ;
 }
 
 .stats-info p {
     margin: 0;
     line-height: 1.4;
-    color: #000000 !important;
-    background-color: transparent !important;
+    color: #000000 ;
+    background-color: transparent ;
 }
 
 /* Rating Paragraph Block */
@@ -140,25 +135,25 @@ body {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    background-color: transparent !important;
+    background-color: transparent ;
 }
 
 .rating-line {
     padding-left: 15px;
-    color: #000000 !important;
-    background-color: transparent !important;
+    color: #000000 ;
+    background-color: transparent;
 }
 
-/* Right Red Image Box */
+/* Right Red Image Box(PLACEHOLDER) */
 .stats-image-container {
     width: 280px;
     height: 350px;
-    background-color: #fa6c6c !important;
+    background-color: #fa6c6c;
     border-radius: 12px;
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
-    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .stats-img {
@@ -167,21 +162,7 @@ body {
     object-fit: cover;
 }
 
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* ==========================================
-   4. SIDE SLIDE-OUT NAVIGATION BAR
-   ========================================== */
+/* SIDE NAV BAR(AI USED)*/
 .side-nav-container {
     position: fixed;
     right: 0;
@@ -204,7 +185,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 6px 0 0 6px;
-    box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .side-menu {
@@ -253,7 +234,7 @@ body {
     color: #fa6c6c;
     font-weight: bold;
     text-decoration: underline;
-    transition: color 0.2s ease, text-decoration 0.2s ease;
+    transition: color 0.2s ease, text-decoration 0.2s ease; /*allows to smoothly animate changes to CSS properties over a specified duration*/
 }
 
 .lichess-link:hover {
@@ -261,9 +242,7 @@ body {
     text-decoration: none;
 }
 
-/* ==========================================
-   HOW TO PLAY SECTION STYLES
-   ========================================== */
+/* How to Play Section */
 .how-to-play-section {
     width: 100%;
     max-width: 950px;
@@ -271,7 +250,7 @@ body {
     padding: 0 20px;
 }
 
-/* "How to Play(A short introduction to the game)" Header */
+/* How to Play Header */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -295,7 +274,7 @@ body {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Inside Flex Layout */
@@ -327,7 +306,7 @@ body {
     margin: 0;
 }
 
-/* Right Column: Red Image Container Box */
+/* Right Column: Red Image Container Box(PLACEHOLDER) */
 .card-image-container {
     width: 280px;
     height: 280px;
@@ -336,7 +315,7 @@ body {
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
-    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .card-img {
@@ -345,21 +324,7 @@ body {
     object-fit: cover;
 }
 
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* ==========================================
-   HOW THE PIECES MOVE SECTION
-   ========================================== */
+/* How the Pieces Move Section */
 .piece-moves-section {
     width: 100%;
     max-width: 950px;
@@ -379,7 +344,7 @@ body {
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Red Vertical Number Strip */
@@ -425,7 +390,7 @@ body {
     margin: 0;
 }
 
-/* Red Media Box on Right (For Videos or GIF placeholders) */
+/* Red Media Box on Right(PLACEHOLDER) */
 .piece-media-container {
     width: 260px;
     height: 220px;
@@ -434,7 +399,7 @@ body {
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
-    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .piece-video {
@@ -443,21 +408,7 @@ body {
     object-fit: cover;
 }
 
-.media-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* ==========================================
-   THE 3 STAGES OF THE GAME SECTION
-   ========================================== */
+/* 3 Stages of the Game Section */
 .stages-section {
     width: 100%;
     max-width: 950px;
@@ -482,7 +433,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Red Image Placeholder Box on Top */
@@ -494,7 +445,7 @@ body {
     overflow: hidden;
     position: relative;
     margin-bottom: 24px;
-    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .stage-img {
@@ -516,7 +467,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 18px;
-    box-shadow: 0 3px 8px rgba(214, 0, 0, 0.3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Card Header */
@@ -535,9 +486,7 @@ body {
     margin: 0;
 }
 
-/* ==========================================
-   MY JOURNEY SECTION STYLES
-   ========================================== */
+/* My Journey Section */
 .journey-section {
     width: 100%;
     max-width: 950px;
@@ -568,7 +517,7 @@ body {
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Left Red Number Bar */
@@ -623,10 +572,10 @@ body {
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
-    box-shadow: 0 4px 12px rgba(214, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Dual Red Image Placeholders (Step 3 layout) */
+/* Dual Red Image Placeholders */
 .journey-media-dual {
     display: flex;
     gap: 16px;
@@ -650,43 +599,13 @@ body {
     padding: 10px;
 }
 
-/* Responsive adjustment for Mobile */
-@media (max-width: 768px) {
-    .journey-card-wrapper {
-        flex-direction: column;
-    }
-
-    .journey-badge {
-        width: 100%;
-        height: 50px;
-    }
-
-    .journey-card-content {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .journey-media-container,
-    .journey-media-dual {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .journey-media-dual .journey-media-container {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-/* ==========================================
-   TOURNAMENT RESULTS TABLE STYLES
-   ========================================== */
+/* Tournament Results Table */
 .table-container {
     width: 100%;
     max-width: 550px;
     margin: 20px auto;
     background-color: #ffffff;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -694,7 +613,7 @@ body {
 .results-table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
 }
 
@@ -727,7 +646,7 @@ body {
 
 /* Column 1: Large Centered Game Numbers */
 .game-num {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #000000;
     background-color: #ffffff;
@@ -743,30 +662,28 @@ body {
 }
 
 .color-black {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: #000000 ;
+    color: #ffffff ;
     font-weight: 500;
     width: 35%;
 }
 
 /* Column 3: Win / Draw Colors */
 .result-win {
-    background-color: #7bdc5c !important; /* Bright match green */
-    color: #ffffff !important;
+    background-color: #7bdc5c ;
+    color: #ffffff ;
     font-weight: bold;
     width: 35%;
 }
 
 .result-draw {
-    background-color: #cccccc !important; /* Soft grey for draws */
-    color: #000000 !important;
+    background-color: #cccccc ;
+    color: #000000 ;
     font-weight: normal;
     width: 35%;
 }
 
-/* ==========================================
-   MY SOCIALS SECTION STYLES
-   ========================================== */
+/* My Socials Section */
 .socials-section {
     width: 100%;
     max-width: 950px;
@@ -790,7 +707,7 @@ body {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .socials-card-content {
@@ -832,7 +749,7 @@ body {
     color: #fe7777;
 }
 
-/* --- YouTube Glowing Button --- */
+/* --- YouTube Glowing Button(AI USED) --- */
 .yt-btn {
     display: inline-flex;
     justify-content: center;
@@ -854,7 +771,7 @@ body {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover Effect: Lights up with Red Neon Glow */
+/* Hover Effect: Lights up with Red Neon Glow(AI USED) */
 .yt-btn:hover {
     border-color: #fe7777;
     background-color: #ffffff;
@@ -867,7 +784,7 @@ body {
     filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8));
 }
 
-/* --- Right Column Map Container --- */
+/* --- Right Column Map Container(AI USED) --- */
 .map-container {
     width: 320px;
     height: 320px;
@@ -875,7 +792,7 @@ body {
     border-radius: 16px;
     overflow: hidden;
     flex-shrink: 0;
-    box-shadow: 0 4px 16px rgba(214, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     transition: box-shadow 0.3s ease;
 }
 
@@ -883,15 +800,4 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 16px;
-}
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .socials-card-content {
-        flex-direction: column;
-    }
-
-    .map-container {
-        width: 100%;
-        height: 280px;
-    }
 }

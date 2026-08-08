@@ -1,0 +1,124 @@
+/*----------faril_hobbies------------*/
+.faril_head {
+    background-image: url("../Images/cooking_two.jpg");
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.faril_head h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: bolder;
+    font-size: 5em;
+    color:whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white; 
+}
+
+/* why section */
+.row_why {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    margin-top: 35px;
+    padding: 0 20px;
+}
+.why_section h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+.why_img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.why_card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.why_card h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000000;
+}
+
+.why_card p {
+    font-weight: bold;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+.dishh1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.dish_section{
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap:10px;
+}
+
+.dish_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    margin: 0 auto 50px auto;
+    width:800px ;
+}
+.dish_content img {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dish_content p {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.dish_content h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top:5px;
+}
+
+.dish_content a {
+    color: #fa6c6c;
+    font-weight: bold;
+}
+
+.cook_video {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.cook_video h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
